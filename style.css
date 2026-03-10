@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #444444, #000000, #4f4f4f);
+}
+
+/* MAIN CARD */
+.container, .center-card {
+    width: 90%;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0px 15px 40px rgba(0,0,0,0.3);
+}
+
+/* HEADERS */
+h1 {
+    background: #1a1a1a;
+    color: #d4af37;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+h2, h3 {
+    color: #000000;
+}
+
+/* SECTION */
+.section-title {
+    background: #1a1a1a;
+    color: #d4af37;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 40px;
+    font-weight: bold;
+}
+
+.question {
+    background: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-weight: bold;
+    color: black;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+    color: black;
+}
+
+button, .group-btn {
+    display: block;
+    background: #000000);
+    color: #d4af37;
+    padding: 12px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+button:hover, .group-btn:hover {
+    background: #000000;
+    color: #d4af37;
+}
+
+.performance-box {
+    background: rgb(255, 255, 255);
+    color: #d4af37;
+    padding: 20px;
+    border-radius: 10px;
+   
+}
+
+.other-degrees {
+    text-align: center;
+}
+
+.other-degrees ul {
+    list-style-position: inside;   /* important line */
+    padding: 0;
+    display: inline-block;
+    text-align: left;   /* keeps bullets aligned properly */
+}
+
+.other-degrees li {
+    color: #000000;
+    margin: 5px 0;
+    font-size: 18px;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Result</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+<div class="container">
+
+<h1 style="color: #d4af37;">{{ group }} Result</h1>
+<h2 style="color: #000000;">Student Name: {{ student_name }}</h2>
+
+<div style="width:400px; margin:30px auto;">
+<canvas id="chart"></canvas>
+</div>
+
+<h2 style="text-align: center;">Recommended Degree</h2>
+<div style="font-size:40px; color:#d4af37; font-weight:bold; text-align:center;">
+{{ degree }}
+</div>
+
+<div style="max-width:600px; margin:20px auto; text-align:center;">
+<h3 style="color:#000000;">Career Suggestion</h3>
+<p style="color: #d4af37;">{{ message }}</p>
+</div>
+
+<div style="background:#000000; padding:20px; border-radius:10px; max-width:250px; margin:20px auto; text-align:center;">
+<h3 style="color: #d4af37;">Performance</h3>
+<p style="color: white;">Percentage: {{ percentage }}%</p>
+<p style="color: white;">Level: {{ performance }}</p>
+</div>
+
+<div class="other-degrees">
+    <h2 style="color: #d4af37; text-align: center;">Other Degrees</h2>
+    <ul>
+        {% for d in degrees_list %}
+        <li>{{ d }}</li>
+        {% endfor %}
+    </ul>
+</div>
+
+<br>
+<a href="/" class="group-btn">Back to Home</a>
+
+</div>
+
+<script>
+new Chart(document.getElementById('chart'), {
+type: 'bar',
+data: {
+labels: {{ subjects|tojson }},
+datasets: [{
+label: "Scores",
+data: {{ scores|tojson }},
+backgroundColor: "#d4af37"
+}]
+},
+options: {
+plugins: { legend: { display: false } },
+scales: { y: { beginAtZero:true, max:10 } }
+}
+});
+</script>
+
+</body>
+</html>

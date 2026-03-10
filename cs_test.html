@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CS Group Test</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+<h1>Mock Test for CS</h1>
+<h3 id="timer" style="color:#d4af37;">Time Left: 10:00</h3>
+
+<form action="/cs_result" method="POST">
+
+<div class="question">
+<p><strong>Enter Your Name:</strong></p>
+<input type="text" name="student_name" required style="width:100%; padding:8px;">
+</div>
+
+<div class="section-title">Section 1: Computer Science</div>
+
+<div class="question"><p>1. CPU stands for?</p>
+<label><input type="radio" name="q1" value="A" required> Central Processing Unit</label>
+<label><input type="radio" name="q1" value="B"> Computer Power Unit</label>
+<label><input type="radio" name="q1" value="C"> Control Program Unit</label>
+<label><input type="radio" name="q1" value="D"> Central Program Unit</label>
+</div>
+
+<div class="question"><p>2. Which is an input device?</p>
+<label><input type="radio" name="q2" value="A" required> Monitor</label>
+<label><input type="radio" name="q2" value="B"> Keyboard</label>
+<label><input type="radio" name="q2" value="C"> Speaker</label>
+<label><input type="radio" name="q2" value="D"> Printer</label>
+</div>
+
+<div class="question"><p>3. Python is a?</p>
+<label><input type="radio" name="q3" value="A" required> Hardware</label>
+<label><input type="radio" name="q3" value="B"> Programming Language</label>
+<label><input type="radio" name="q3" value="C"> Virus</label>
+<label><input type="radio" name="q3" value="D"> Browser</label>
+</div>
+
+<div class="question"><p>4. RAM is used for?</p>
+<label><input type="radio" name="q4" value="A" required> Temporary storage</label>
+<label><input type="radio" name="q4" value="B"> Permanent storage</label>
+<label><input type="radio" name="q4" value="C"> Internet</label>
+<label><input type="radio" name="q4" value="D"> Virus protection</label>
+</div>
+
+<div class="question"><p>5. Symbol used for comments in Python?</p>
+<label><input type="radio" name="q5" value="A" required> //</label>
+<label><input type="radio" name="q5" value="B"> #</label>
+<label><input type="radio" name="q5" value="C"> /*</label>
+<label><input type="radio" name="q5" value="D"> --</label>
+</div>
+
+<div class="section-title">Section 2: Mathematics</div>
+
+<div class="question"><p>6. 5 + 3 = ?</p>
+<label><input type="radio" name="q6" value="A" required> 6</label>
+<label><input type="radio" name="q6" value="B"> 7</label>
+<label><input type="radio" name="q6" value="C"> 8</label>
+<label><input type="radio" name="q6" value="D"> 9</label>
+</div>
+
+<div class="question"><p>7. Square of 4?</p>
+<label><input type="radio" name="q7" value="A" required> 12</label>
+<label><input type="radio" name="q7" value="B"> 14</label>
+<label><input type="radio" name="q7" value="C"> 15</label>
+<label><input type="radio" name="q7" value="D"> 16</label>
+</div>
+
+<div class="question"><p>8. √25 = ?</p>
+<label><input type="radio" name="q8" value="A" required> 4</label>
+<label><input type="radio" name="q8" value="B"> 5</label>
+<label><input type="radio" name="q8" value="C"> 6</label>
+<label><input type="radio" name="q8" value="D"> 7</label>
+</div>
+
+<div class="question"><p>9. 10% of 200?</p>
+<label><input type="radio" name="q9" value="A" required> 10</label>
+<label><input type="radio" name="q9" value="B"> 20</label>
+<label><input type="radio" name="q9" value="C"> 30</label>
+<label><input type="radio" name="q9" value="D"> 40</label>
+</div>
+
+<div class="question"><p>10. 2x = 10, x = ?</p>
+<label><input type="radio" name="q10" value="A" required> 3</label>
+<label><input type="radio" name="q10" value="B"> 4</label>
+<label><input type="radio" name="q10" value="C"> 5</label>
+<label><input type="radio" name="q10" value="D"> 6</label>
+</div>
+
+<div class="section-title">Section 3: Physics</div>
+
+<div class="question"><p>11. Unit of Force?</p>
+<label><input type="radio" name="q11" value="A" required> Joule</label>
+<label><input type="radio" name="q11" value="B"> Watt</label>
+<label><input type="radio" name="q11" value="C"> Newton</label>
+<label><input type="radio" name="q11" value="D"> Pascal</label>
+</div>
+
+<div class="question"><p>12. Speed formula?</p>
+<label><input type="radio" name="q12" value="A" required> Distance / Time</label>
+<label><input type="radio" name="q12" value="B"> Time × Distance</label>
+<label><input type="radio" name="q12" value="C"> Force × Mass</label>
+<label><input type="radio" name="q12" value="D"> Voltage / Current</label>
+</div>
+
+<div class="question"><p>13. Unit of Current?</p>
+<label><input type="radio" name="q13" value="A" required> Volt</label>
+<label><input type="radio" name="q13" value="B"> Ampere</label>
+<label><input type="radio" name="q13" value="C"> Watt</label>
+<label><input type="radio" name="q13" value="D"> Newton</label>
+</div>
+
+<div class="question"><p>14. Value of gravity on Earth?</p>
+<label><input type="radio" name="q14" value="A" required> 9.8 m/s²</label>
+<label><input type="radio" name="q14" value="B"> 8 m/s²</label>
+<label><input type="radio" name="q14" value="C"> 5 m/s²</label>
+<label><input type="radio" name="q14" value="D"> 10 m/s²</label>
+</div>
+
+<div class="question"><p>15. Light travels fastest in?</p>
+<label><input type="radio" name="q15" value="A" required> Air</label>
+<label><input type="radio" name="q15" value="B"> Water</label>
+<label><input type="radio" name="q15" value="C"> Solid</label>
+<label><input type="radio" name="q15" value="D"> Vacuum</label>
+</div>
+
+<div class="section-title">Section 4: Chemistry</div>
+
+<div class="question"><p>16. Chemical formula of water?</p>
+<label><input type="radio" name="q16" value="A" required> H2O</label>
+<label><input type="radio" name="q16" value="B"> CO2</label>
+<label><input type="radio" name="q16" value="C"> O2</label>
+<label><input type="radio" name="q16" value="D"> HCl</label>
+</div>
+
+<div class="question"><p>17. Atomic number of Hydrogen?</p>
+<label><input type="radio" name="q17" value="A" required> 1</label>
+<label><input type="radio" name="q17" value="B"> 2</label>
+<label><input type="radio" name="q17" value="C"> 3</label>
+<label><input type="radio" name="q17" value="D"> 4</label>
+</div>
+
+<div class="question"><p>18. Neutral pH value?</p>
+<label><input type="radio" name="q18" value="A" required> 5</label>
+<label><input type="radio" name="q18" value="B"> 6</label>
+<label><input type="radio" name="q18" value="C"> 7</label>
+<label><input type="radio" name="q18" value="D"> 8</label>
+</div>
+
+<div class="question"><p>19. Oxygen is a?</p>
+<label><input type="radio" name="q19" value="A" required> Metal</label>
+<label><input type="radio" name="q19" value="B"> Liquid</label>
+<label><input type="radio" name="q19" value="C"> Gas</label>
+<label><input type="radio" name="q19" value="D"> Solid</label>
+</div>
+
+<div class="question"><p>20. Periodic table arranged by?</p>
+<label><input type="radio" name="q20" value="A" required> Atomic Number</label>
+<label><input type="radio" name="q20" value="B"> Atomic Mass</label>
+<label><input type="radio" name="q20" value="C"> Color</label>
+<label><input type="radio" name="q20" value="D"> Size</label>
+</div>
+
+<center><button type="submit">Submit Test</button></center>
+</form>
+</div>
+
+<script>
+let time=600;
+let timer=document.getElementById("timer");
+setInterval(()=>{
+let m=Math.floor(time/60);
+let s=time%60;
+timer.innerHTML="Time Left: "+m+":"+(s<10?"0":"")+s;
+time--;
+if(time<0){document.forms[0].submit();}
+},1000);
+</script>
+
+</body>
+</html>

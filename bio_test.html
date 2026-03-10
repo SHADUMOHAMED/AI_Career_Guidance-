@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Biology Group Test</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+<h1>Mock Test for Bio Maths</h1>
+<h3 id="timer" style="color:#d4af37;">Time Left: 10:00</h3>
+
+<form action="/bio_result" method="POST">
+
+<div class="question">
+<p><strong>Enter Your Name:</strong></p>
+<input type="text" name="student_name" required style="width:100%; padding:8px;">
+</div>
+
+<div class="section-title">Section 1: Biology</div>
+
+<div class="question"><p>1. Basic unit of life?</p>
+<label><input type="radio" name="q1" value="A" required> Atom</label>
+<label><input type="radio" name="q1" value="B"> Cell</label>
+<label><input type="radio" name="q1" value="C"> Tissue</label>
+<label><input type="radio" name="q1" value="D"> Organ</label>
+</div>
+
+<div class="question"><p>2. Photosynthesis occurs in?</p>
+<label><input type="radio" name="q2" value="A" required> Root</label>
+<label><input type="radio" name="q2" value="B"> Stem</label>
+<label><input type="radio" name="q2" value="C"> Leaf</label>
+<label><input type="radio" name="q2" value="D"> Flower</label>
+</div>
+
+<div class="question"><p>3. Human heart has how many chambers?</p>
+<label><input type="radio" name="q3" value="A" required> 2</label>
+<label><input type="radio" name="q3" value="B"> 3</label>
+<label><input type="radio" name="q3" value="C"> 4</label>
+<label><input type="radio" name="q3" value="D"> 5</label>
+</div>
+
+<div class="question"><p>4. Blood carries?</p>
+<label><input type="radio" name="q4" value="A" required> Oxygen</label>
+<label><input type="radio" name="q4" value="B"> Water</label>
+<label><input type="radio" name="q4" value="C"> Carbon</label>
+<label><input type="radio" name="q4" value="D"> Nitrogen</label>
+</div>
+
+<div class="question"><p>5. Largest organ in human body?</p>
+<label><input type="radio" name="q5" value="A" required> Skin</label>
+<label><input type="radio" name="q5" value="B"> Heart</label>
+<label><input type="radio" name="q5" value="C"> Brain</label>
+<label><input type="radio" name="q5" value="D"> Liver</label>
+</div>
+
+<div class="section-title">Section 2: Physics</div>
+
+<div class="question"><p>6. SI unit of Power?</p>
+<label><input type="radio" name="q6" value="A" required> Watt</label>
+<label><input type="radio" name="q6" value="B"> Joule</label>
+<label><input type="radio" name="q6" value="C"> Pascal</label>
+<label><input type="radio" name="q6" value="D"> Newton</label>
+</div>
+
+<div class="question"><p>7. Unit of Pressure?</p>
+<label><input type="radio" name="q7" value="A" required> Pascal</label>
+<label><input type="radio" name="q7" value="B"> Watt</label>
+<label><input type="radio" name="q7" value="C"> Joule</label>
+<label><input type="radio" name="q7" value="D"> Ampere</label>
+</div>
+
+<div class="question"><p>8. Energy unit?</p>
+<label><input type="radio" name="q8" value="A" required> Joule</label>
+<label><input type="radio" name="q8" value="B"> Watt</label>
+<label><input type="radio" name="q8" value="C"> Newton</label>
+<label><input type="radio" name="q8" value="D"> Pascal</label>
+</div>
+
+<div class="question"><p>9. Sound travels fastest in?</p>
+<label><input type="radio" name="q9" value="A" required> Solid</label>
+<label><input type="radio" name="q9" value="B"> Liquid</label>
+<label><input type="radio" name="q9" value="C"> Gas</label>
+<label><input type="radio" name="q9" value="D"> Vacuum</label>
+</div>
+
+<div class="question"><p>10. Work formula?</p>
+<label><input type="radio" name="q10" value="A" required> Force × Distance</label>
+<label><input type="radio" name="q10" value="B"> Distance / Time</label>
+<label><input type="radio" name="q10" value="C"> Mass × Speed</label>
+<label><input type="radio" name="q10" value="D"> Current × Voltage</label>
+</div>
+
+<div class="section-title">Section 3: Chemistry</div>
+
+<div class="question"><p>11. Chemical symbol of Sodium?</p>
+<label><input type="radio" name="q11" value="A" required> Na</label>
+<label><input type="radio" name="q11" value="B"> So</label>
+<label><input type="radio" name="q11" value="C"> S</label>
+<label><input type="radio" name="q11" value="D"> Sn</label>
+</div>
+
+<div class="question"><p>12. Acid example?</p>
+<label><input type="radio" name="q12" value="A" required> HCl</label>
+<label><input type="radio" name="q12" value="B"> NaCl</label>
+<label><input type="radio" name="q12" value="C"> H2O</label>
+<label><input type="radio" name="q12" value="D"> CO2</label>
+</div>
+
+<div class="question"><p>13. Water boiling point?</p>
+<label><input type="radio" name="q13" value="A" required> 100°C</label>
+<label><input type="radio" name="q13" value="B"> 50°C</label>
+<label><input type="radio" name="q13" value="C"> 0°C</label>
+<label><input type="radio" name="q13" value="D"> 200°C</label>
+</div>
+
+<div class="question"><p>14. Oxygen atomic number?</p>
+<label><input type="radio" name="q14" value="A" required> 8</label>
+<label><input type="radio" name="q14" value="B"> 6</label>
+<label><input type="radio" name="q14" value="C"> 1</label>
+<label><input type="radio" name="q14" value="D"> 16</label>
+</div>
+
+<div class="question"><p>15. Neutral pH value?</p>
+<label><input type="radio" name="q15" value="A" required> 7</label>
+<label><input type="radio" name="q15" value="B"> 5</label>
+<label><input type="radio" name="q15" value="C"> 9</label>
+<label><input type="radio" name="q15" value="D"> 3</label>
+</div>
+
+<div class="section-title">Section 4: Mathematics</div>
+
+<div class="question"><p>16. 15 + 5 = ?</p>
+<label><input type="radio" name="q16" value="A" required> 20</label>
+<label><input type="radio" name="q16" value="B"> 18</label>
+<label><input type="radio" name="q16" value="C"> 25</label>
+<label><input type="radio" name="q16" value="D"> 15</label>
+</div>
+
+<div class="question"><p>17. √36 = ?</p>
+<label><input type="radio" name="q17" value="A" required> 6</label>
+<label><input type="radio" name="q17" value="B"> 5</label>
+<label><input type="radio" name="q17" value="C"> 4</label>
+<label><input type="radio" name="q17" value="D"> 3</label>
+</div>
+
+<div class="question"><p>18. 20% of 50?</p>
+<label><input type="radio" name="q18" value="A" required> 10</label>
+<label><input type="radio" name="q18" value="B"> 20</label>
+<label><input type="radio" name="q18" value="C"> 5</label>
+<label><input type="radio" name="q18" value="D"> 15</label>
+</div>
+
+<div class="question"><p>19. 3² = ?</p>
+<label><input type="radio" name="q19" value="A" required> 6</label>
+<label><input type="radio" name="q19" value="B"> 9</label>
+<label><input type="radio" name="q19" value="C"> 3</label>
+<label><input type="radio" name="q19" value="D"> 12</label>
+</div>
+
+<div class="question"><p>20. 12 ÷ 3 = ?</p>
+<label><input type="radio" name="q20" value="A" required> 4</label>
+<label><input type="radio" name="q20" value="B"> 5</label>
+<label><input type="radio" name="q20" value="C"> 6</label>
+<label><input type="radio" name="q20" value="D"> 3</label>
+</div>
+
+<center><button type="submit">Submit Test</button></center>
+</form>
+</div>
+
+<script>
+let time=600;
+let timer=document.getElementById("timer");
+setInterval(()=>{
+let m=Math.floor(time/60);
+let s=time%60;
+timer.innerHTML="Time Left: "+m+":"+(s<10?"0":"")+s;
+time--;
+if(time<0){document.forms[0].submit();}
+},1000);
+</script>
+
+</body>
+</html>
